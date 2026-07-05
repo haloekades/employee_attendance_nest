@@ -44,9 +44,9 @@ async function bootstrapAuth() {
 }
 
 async function bootstrap() {
-  bootstrapEmployee();
-  bootstrapAttendance();
-  bootstrapAuth();
+  // bootstrapEmployee();
+  // bootstrapAttendance();
+  // bootstrapAuth();
 
   const app = await NestFactory.create(AppModule);
   app.enableCors();
