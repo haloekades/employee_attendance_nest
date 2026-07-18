@@ -18,6 +18,13 @@ export const ATTENDANCES_PATTERNS = {
   REMOVE: 'attendances.remove',
 } as const;
 
+export const ORDERS_PATTERNS = {
+  CREATE: 'orders.create',
+  FIND_ALL: 'orders.findAll',
+  UPDATE: 'orders.update',
+  REMOVE: 'orders.remove',
+} as const;
+
 export const AUTH_PATTERNS = {
   LOGIN: 'auth.login',
 } as const;

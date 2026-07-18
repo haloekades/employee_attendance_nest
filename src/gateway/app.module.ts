@@ -6,6 +6,7 @@ import { AttendancesModule } from './attendances/attendances.module';
 import { AuthModule } from './auth/auth.module';
 import { EmployeesModule } from './employees/employees.module';
 import { NotificationsModule } from './notifications/notifications.module';
+import { OrdersModule } from './order/orders.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { NotificationsModule } from './notifications/notifications.module';
     EmployeesModule,
     AttendancesModule,
     AuthModule,
+    OrdersModule,
     NotificationsModule,
   ],
   controllers: [AppController],
