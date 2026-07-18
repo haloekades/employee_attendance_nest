@@ -14,7 +14,7 @@ Four independently runnable apps live in this one repo, under `src/`:
 | `auth-service` | Login/JWT issuance. Verifies credentials by calling `employees-service`. | RabbitMQ (`auth_queue`) |
 
 ```
-HTTP client --> gateway --(RabbitMQ)--> employees-service / attendances-service / auth-service
+HTTP client --> gateway --(RabbitMQ)--> employees-service / attendances-service / auth-service / order-services
                                               ^                    |
                                               +--- validates & -----+
                                                    enriches via RPC
@@ -62,6 +62,7 @@ Every service is a separate process — start each in its own terminal tab.
 npm run start:employees:dev
 npm run start:attendances:dev
 npm run start:auth:dev
+npm run start:orders:dev
 npm run start:gateway:dev
 ```
 
@@ -75,6 +76,7 @@ npm run build
 npm run start:employees
 npm run start:attendances
 npm run start:auth
+npm run start:orders
 npm run start:gateway
 ```
 
